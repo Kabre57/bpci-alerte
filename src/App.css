@@ -1,0 +1,200 @@
+.full-blast {
+  background-image: url("./images/backgrounds/carte.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.fixed-w {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.fixed-w2 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1400px) {
+  .fixed-w {
+    max-width: 1250px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .fixed-w {
+    max-width: 1150px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .fixed-w {
+    max-width: 1050px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .fixed-w {
+    max-width: 950px;
+  }
+}
+
+.font-PoppinsLight {
+  font-family: "Poppins-Light";
+}
+
+.font-PoppinsThin {
+  font-family: "Poppins-Thin";
+}
+
+.font-PoppinsRegular {
+  font-family: "Poppins-Regular";
+}
+
+.font-PoppinsMedium {
+  font-family: "Poppins-Medium";
+}
+
+.font-PoppinsSemiBold {
+  font-family: "Poppins-SemiBold";
+}
+
+.font-PoppinsBold {
+  font-family: "Poppins-Bold";
+}
+
+.custom-input {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bpciGraye); /* Couleur grise claire */
+  padding: .2rem 1rem;
+  gap: 1rem;
+  border-radius: .25rem;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée pour le champ de saisie */
+}
+
+.custom-input.full {
+  max-width: 100%;
+}
+
+.custom-input input {
+  border: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  border-radius: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+
+.force-m0 {
+  margin: 0 !important;
+}
+
+.to-default-ul {
+  list-style-type: inherit !important;
+}
+
+.custom-actions {
+  background-color: var(--color-bpcivert); /* Rouge pour les actions */
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée pour les actions */
+}
+
+.dropbtn {
+  color: var(--color-white); /* Texte en blanc */
+  padding: 16px;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  border: none;
+  cursor: pointer;
+  font-size: .95rem;
+  transition: all .2s ease-out;
+  background-color: var(--color-bpciblue); /* Fond du bouton en bleu nuit */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée pour le bouton */
+}
+
+.dropbtn:hover,
+.dropbtn:active {
+  background-color: #fff !important; /* Fond blanc au hover */
+  color: black !important; /* Texte en noir au hover */
+}
+
+.dropbtn:active {
+  transform: scale(.8);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  right: .025rem;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all .2s ease;
+  width: 100%;
+}
+
+.dropdown button:hover {
+  background-color: var(--color-bpciblue); /* Fond bleu nuit au hover */
+  color: var(--color-white); /* Texte en blanc au hover */
+}
+
+.show {
+  display: block;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée pour la notification */
+}
+
+.notification .icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification .complaint-description {
+  flex-grow: 1;
+}
+
+.notification .complaint-description .name {
+  font-weight: bold;
+}
+
+.notification .timestamp {
+  font-size: 0.875rem;
+  color: #718096; /* Couleur pour la date/heure */
+}

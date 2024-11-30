@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bpcidark: #0C0E45;
+  --color-bpcidark-opacity-20: #0c0e453b;
+  --color-bpcidark-opacity-80: #0c0e45b9;
+  --color-bpcidarki: #555;
+  --color-bpcidarki2: #4A4A4A;
+  --color-bpciblue: #061C3A;
+  --color-bpciorange: #E96B00;
+  --color-bpciorange-opacity-70: #e96d00a8;
+  --color-bpciGray: #d3d3da;
+  --color-bpciGray2: #e3e3e3;
+  --color-bpcigray: #F8F8F9;
+  --color-bpciGRAY: #f4f4f4;
+  --color-bpciwhite: #FFFFFF;
+  --color-bpciGraye: #F6F9F9;
+  --color-bpciv2Graye: #F5F7F9;
+  --color-bpcivert: #08620f;
+  --color-bpcirouge: #e00d17;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
+}
+
+HTML {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-bpcidark);
+  font-family: 'Poppins-Regular';
+  background: linear-gradient(299.64deg,
+      #c3d1e4 -0.02%,
+      #dde7f3 54.14%,
+      #d4e0ed 100.43%);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ion-icon.sm {
+  font-size: .8rem;
+  display: none;
+}
+
+ion-icon.md {
+  font-size: 1.1rem;
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: local('Poppins-Light'), url(./fonts/Poppins/Poppins-Light.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: local('Poppins-Thin'), url(./fonts/Poppins/Poppins-Thin.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: local('Poppins-Regular'), url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: local('Poppins-Medium'), url(./fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: local('Poppins-SemiBold'), url(./fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'), url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: local('Poppins-Light'), url(./fonts/Poppins/Poppins-Light.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+input,
+select {
+  height: 3rem;
+  margin-top: .5rem;
+  width: 100%;
+  border-radius: .375rem;
+  border: 1px solid var(--color-bpcidark-opacity-20);
+  padding: 0 1rem;
+  outline: none;
+}
+
+input.noM,
+select.noM {
+  margin: 0 !important;
+}
+
+select.noM {
+  font-size: .75rem;
+  height: 1.7rem;
+  font-family: "Poppins-Light";
+}
+
+input:not(input[type="radio"]):focus {
+  border: .5rem solid var(--color-bpcivert);
+}
+
+
+textarea {
+  height: 6rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: .75rem;
+  border: 1px solid var(--color-bpcidark-opacity-20);
+}
+
+label {
+  color: var(--color-bpcidark-opacity-80);
+  font-weight: 700;
+  font-size: .775rem;
+  line-height: 1.313rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none;
+  cursor: pointer;
+  padding: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  display: inline-block;
+  position: relative;
+  outline: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background: var(--color-bpcivert);
+  outline: none;
+  padding: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 5px 10px;
+}
+
+td.noM,
+th.noM {
+  padding: 5px 0px;
+}
+
+th {
+  font-family: "Poppins-Bold";
+}
+
+td {
+  font-family: "Poppins-Regular";
+  font-size: 1rem;
+  height: 50px;
+  vertical-align: middle;
+}
+
+tr {
+  vertical-align: center;
+}
+
+th.lf,
+td.lf {
+  border-left: 1px solid rgb(212, 209, 209);
+}
+
+#mvScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  width: .83.333333;
+  cursor: pointer;
+} */
+
+#dashB::-webkit-scrollbar {
+  display: none;
+}
